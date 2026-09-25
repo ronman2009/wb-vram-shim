@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 430" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="880" height="430" fill="#ffffff"/>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+    <marker id="arrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0969da"/>
+    </marker>
+  </defs>
+
+  <text x="24" y="38" font-size="19" font-weight="700" fill="#1f2328">wb-vram-shim 数据流</text>
+
+  <!-- 主链：游戏 -> shim -> DXVK -> 驱动 -->
+  <g>
+    <rect x="24" y="70" width="160" height="86" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+    <text x="104" y="103" font-size="15" font-weight="700" fill="#1f2328" text-anchor="middle">游戏</text>
+    <text x="104" y="124" font-size="11.5" fill="#57606a" text-anchor="middle">DX12 / DXGI</text>
+    <text x="104" y="141" font-size="11.5" fill="#57606a" text-anchor="middle">读显存总量与预算</text>
+
+    <line x1="184" y1="113" x2="248" y2="113" stroke="#57606a" stroke-width="1.5" marker-end="url(#arr)"/>
+    <text x="216" y="103" font-size="10.5" fill="#57606a" text-anchor="middle">查询</text>
+
+    <!-- shim：强调 -->
+    <rect x="250" y="58" width="220" height="110" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
+    <text x="360" y="86" font-size="15" font-weight="700" fill="#0969da" text-anchor="middle">dxgi.dll（本组件）</text>
+    <text x="360" y="108" font-size="11.5" fill="#1f2328" text-anchor="middle">拦截 GetDesc / QueryVideoMemoryInfo</text>
+    <text x="360" y="126" font-size="11.5" fill="#1f2328" text-anchor="middle">改写显存总量与预算后返回</text>
+    <text x="360" y="150" font-size="11" fill="#57606a" text-anchor="middle">装在 Proton 目录 · 游戏文件零改动</text>
+
+    <line x1="470" y1="113" x2="534" y2="113" stroke="#57606a" stroke-width="1.5" marker-end="url(#arr)"/>
+
+    <rect x="536" y="70" width="150" height="86" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+    <text x="611" y="103" font-size="15" font-weight="700" fill="#1f2328" text-anchor="middle">DXVK / vkd3d</text>
+    <text x="611" y="124" font-size="11.5" fill="#57606a" text-anchor="middle">虚表被改写后</text>
+    <text x="611" y="141" font-size="11.5" fill="#57606a" text-anchor="middle">所有调用方一起生效</text>
+
+    <line x1="686" y1="113" x2="750" y2="113" stroke="#57606a" stroke-width="1.5" marker-end="url(#arr)"/>
+
+    <rect x="752" y="70" width="104" height="86" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+    <text x="804" y="108" font-size="15" font-weight="700" fill="#1f2328" text-anchor="middle">NVIDIA</text>
+    <text x="804" y="128" font-size="11.5" fill="#57606a" text-anchor="middle">驱动 (NVML)</text>
+  </g>
+
+  <!-- 三个数据源 -->
+  <g>
+    <rect x="24" y="230" width="250" height="96" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+    <text x="149" y="257" font-size="13.5" font-weight="700" fill="#1f2328" text-anchor="middle">① 显存总量</text>
+    <text x="149" y="279" font-size="11.5" fill="#57606a" text-anchor="middle">注册表 HardwareInformation.qwMemorySize</text>
+    <text x="149" y="297" font-size="12" font-weight="600" fill="#0969da" text-anchor="middle">→ 8192 MiB（物理完整值）</text>
+
+    <rect x="300" y="230" width="280" height="96" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+    <text x="440" y="257" font-size="13.5" font-weight="700" fill="#1f2328" text-anchor="middle">② 其它进程占用</text>
+    <text x="440" y="279" font-size="11.5" fill="#57606a" text-anchor="middle">NVML 逐进程枚举（Graphics + Compute）</text>
+    <text x="440" y="297" font-size="12" font-weight="600" fill="#0969da" text-anchor="middle">→ 每进程真实物理占用求和</text>
+
+    <rect x="606" y="230" width="250" height="96" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+    <text x="731" y="257" font-size="13.5" font-weight="700" fill="#1f2328" text-anchor="middle">③ 认出"自己"并剔除</text>
+    <text x="731" y="279" font-size="11.5" fill="#57606a" text-anchor="middle">exe 名匹配 /proc/&lt;pid&gt;/cmdline</text>
+    <text x="731" y="297" font-size="11.5" fill="#57606a" text-anchor="middle">（/proc/self 指向 wineserver，不可用）</text>
+
+    <line x1="149" y1="230" x2="300" y2="180" stroke="#0969da" stroke-width="1.5" marker-end="url(#arrb)"/>
+    <line x1="440" y1="230" x2="380" y2="180" stroke="#0969da" stroke-width="1.5" marker-end="url(#arrb)"/>
+    <line x1="731" y1="230" x2="440" y2="180" stroke="#0969da" stroke-width="1.5" marker-end="url(#arrb)"/>
+  </g>
+
+  <!-- 公式条 -->
+  <rect x="24" y="352" width="832" height="56" rx="10" fill="#1f2328"/>
+  <text x="440" y="387" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle" font-family="Consolas, monospace">budget = 物理总量 − 其它进程占用 − margin(200)     每 500ms 重算，直接覆盖</text>
+</svg>
