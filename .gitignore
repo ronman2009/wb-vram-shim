@@ -1,0 +1,14 @@
+# 本地工作数据（不属于项目本体）
+.workbuddy/
+.Trash-0/
+
+# 编译中间产物
+*.o
+*.obj
+
+# 探针/日志的临时转码文件
+results/_*
+
+# 系统垃圾
+.DS_Store
+Thumbs.db

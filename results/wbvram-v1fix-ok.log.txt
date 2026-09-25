@@ -1,0 +1,7 @@
+本模块路径: C:\windows\system32\DXGI.DLL
+===== wb-vram-shim（Wine 部件版 dxgi.dll）=====
+[已加载 DXVK 原件] system32\wbvram_dxvk_dxgi.dll <- C:\windows\system32\wbvram_dxvk_dxgi.dll
+白名单命中 appid= 3240220
+探测通过：DedicatedVideoMemory=8160 MiB, Budget=7109 MiB, Usage=0 MiB
+已挂钩适配器虚表: GetDesc=6ffffc9a7e80 QueryVideoMemoryInfo=6ffffc9a7500
+计算结果: total=8192 MiB  reserve=1536 MiB  => budget=6656 MiB

@@ -1,0 +1,399 @@
+本模块路径: C:\windows\system32\DXGI.DLL
+===== wb-vram-shim（Wine 部件版 dxgi.dll）=====
+[已加载 DXVK 原件] system32\wbvram_dxvk_dxgi.dll <- C:\windows\system32\wbvram_dxvk_dxgi.dll
+白名单命中 appid= 3240220
+探测通过：DedicatedVideoMemory=8160 MiB, Budget=7098 MiB, Usage=0 MiB
+已挂钩适配器虚表: GetDesc=6ffffc9a7e80 QueryVideoMemoryInfo=6ffffc9a7500
+计算结果: total=8192 MiB  reserve=1536 MiB  => budget=6656 MiB
+===== wb-vram-shim v2 (Wine 部件版 dxgi.dll) pid=296 =====
+本模块: C:\windows\system32\DXGI.DLL
+宿主进程: S:\steamapps\common\Proton - Experimental\files\share\xalia\xalia.exe
+===== 启动 =====
+模式: 改写
+[已加载 DXVK 原件] system32\wbvram_dxvk_dxgi.dll C:\windows\system32\wbvram_dxvk_dxgi.dll
+拿不到 SteamAppId/SteamGameId，默认不改写（要强制生效设 WBVRAM_ALL=1）
+===== wb-vram-shim v2 (Wine 部件版 dxgi.dll) pid=296 =====
+本模块: C:\windows\system32\DXGI.DLL
+宿主进程: S:\steamapps\common\Proton - Experimental\files\share\xalia\xalia.exe
+===== 启动 =====
+模式: 改写
+[已加载 DXVK 原件] system32\wbvram_dxvk_dxgi.dll C:\windows\system32\wbvram_dxvk_dxgi.dll
+白名单命中 appid 3240220 
+[结果] total=8192 MiB（路线B：不用固定余量，预算在首次查询时按驱动预算现算）
+某个 GetDescN 探测不通过，该槽位不挂钩
+探测通过：DedicatedVideoMemory=8160 MiB, Budget=7002 MiB, Usage=0 MiB => 驱动口径其它软件=1157 MiB
+已挂钩适配器虚表: GetDesc=6ffffc9a7e80 QueryVideoMemoryInfo=6ffffc9a7500 GetDesc3=跳过
+===== wb-vram-shim v2 (Wine 部件版 dxgi.dll) pid=340 =====
+本模块: C:\windows\system32\DXGI.DLL
+宿主进程: C:\Program Files\Rockstar Games\Launcher\Launcher.exe
+===== 启动 =====
+模式: 改写
+[已加载 DXVK 原件] system32\wbvram_dxvk_dxgi.dll C:\windows\system32\wbvram_dxvk_dxgi.dll
+白名单命中 appid 3240220 
+[结果] total=8192 MiB（路线B：不用固定余量，预算在首次查询时按驱动预算现算）
+某个 GetDescN 探测不通过，该槽位不挂钩
+探测通过：DedicatedVideoMemory=8160 MiB, Budget=7002 MiB, Usage=0 MiB => 驱动口径其它软件=1157 MiB
+已挂钩适配器虚表: GetDesc=6ffffc9a7e80 QueryVideoMemoryInfo=6ffffc9a7500 GetDesc3=跳过
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+===== wb-vram-shim v2 (Wine 部件版 dxgi.dll) pid=884 =====
+本模块: C:\windows\system32\dxgi.dll
+宿主进程: C:\Program Files\Rockstar Games\Social Club\SocialClubHelper.exe
+===== 启动 =====
+模式: 改写
+[已加载 DXVK 原件] system32\wbvram_dxvk_dxgi.dll C:\windows\system32\wbvram_dxvk_dxgi.dll
+白名单命中 appid 3240220 
+[结果] total=8192 MiB（路线B：不用固定余量，预算在首次查询时按驱动预算现算）
+某个 GetDescN 探测不通过，该槽位不挂钩
+探测通过：DedicatedVideoMemory=8160 MiB, Budget=6823 MiB, Usage=0 MiB => 驱动口径其它软件=1336 MiB
+已挂钩适配器虚表: GetDesc=6ffffc9a7e80 QueryVideoMemoryInfo=6ffffc9a7500 GetDesc3=跳过
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+===== wb-vram-shim v2 (Wine 部件版 dxgi.dll) pid=2484 =====
+本模块: C:\windows\system32\DXGI.DLL
+宿主进程: S:\steamapps\common\Grand Theft Auto V Enhanced\GTA5_Enhanced.exe
+===== 启动 =====
+模式: 改写
+[已加载 DXVK 原件] system32\wbvram_dxvk_dxgi.dll C:\windows\system32\wbvram_dxvk_dxgi.dll
+白名单命中 appid 3240220 
+[结果] total=8192 MiB（路线B：不用固定余量，预算在首次查询时按驱动预算现算）
+某个 GetDescN 探测不通过，该槽位不挂钩
+探测通过：DedicatedVideoMemory=8160 MiB, Budget=6784 MiB, Usage=0 MiB => 驱动口径其它软件=1375 MiB
+已挂钩适配器虚表: GetDesc=6ffffc9a7e80 QueryVideoMemoryInfo=6ffffc9a7500 GetDesc3=跳过
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+[路线B] 驱动预算=6645 本进程=16 => 反推其它=1530 MiB ; margin=200 上限=6912 => 报出=6461 MiB
+[观测] 驱动预算=6645 本进程用量=16 物理总量=8192 => total−预算−本进程=1530 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=6461 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+[路线B] 驱动预算=6523 本进程=260 => 反推其它=1407 MiB ; margin=200 上限=6912 => 报出=6584 MiB
+QueryVideoMemoryInfo(LOCAL): Budget 6523 -> 6584 MiB   (usage=260 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6454 -> 6584 MiB   (usage=260 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6502 -> 6584 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6502 -> 6584 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6502 -> 6584 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6502 -> 6584 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6534 -> 6584 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6534 -> 6584 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6534 -> 6584 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6534 -> 6584 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6534 -> 6584 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6534 -> 6584 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6534 -> 6584 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6534 -> 6584 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6532 -> 6584 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6532 -> 6584 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6532 -> 6584 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6532 -> 6584 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6532 -> 6584 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6532 -> 6584 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6532 -> 6584 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6532 -> 6584 MiB   (usage=464 MiB)
+[路线B] 驱动预算=6532 本进程=464 => 反推其它=1194 MiB ; margin=200 上限=6912 => 报出=6797 MiB
+QueryVideoMemoryInfo(LOCAL): Budget 6532 -> 6797 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6532 -> 6797 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6532 -> 6797 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6532 -> 6797 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6532 -> 6797 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6532 -> 6797 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6532 -> 6797 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6532 -> 6797 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6532 -> 6797 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6532 -> 6797 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6532 -> 6797 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6797 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6797 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6797 MiB   (usage=464 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6797 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6797 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6797 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6797 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6797 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6797 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6797 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6797 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6797 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6797 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6797 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6797 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6797 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6797 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6797 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6797 MiB   (usage=496 MiB)
+[路线B] 驱动预算=6530 本进程=496 => 反推其它=1164 MiB ; margin=200 上限=6912 => 报出=6827 MiB
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=496 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=497 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=497 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=497 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=497 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=529 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=529 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=529 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=529 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=529 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=529 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=529 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=529 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=529 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=529 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=529 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=537 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=537 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=537 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6827 MiB   (usage=537 MiB)
+[路线B] 驱动预算=6530 本进程=537 => 反推其它=1124 MiB ; margin=200 上限=6912 => 报出=6867 MiB
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6867 MiB   (usage=537 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6867 MiB   (usage=537 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6867 MiB   (usage=537 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6867 MiB   (usage=537 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6867 MiB   (usage=538 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6867 MiB   (usage=538 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6867 MiB   (usage=539 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6867 MiB   (usage=539 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6867 MiB   (usage=543 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6867 MiB   (usage=643 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6867 MiB   (usage=679 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6867 MiB   (usage=679 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6867 MiB   (usage=679 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6867 MiB   (usage=679 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6867 MiB   (usage=679 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6867 MiB   (usage=679 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6867 MiB   (usage=679 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6867 MiB   (usage=679 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6867 MiB   (usage=679 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6867 MiB   (usage=679 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6867 MiB   (usage=679 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6867 MiB   (usage=679 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6867 MiB   (usage=679 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6867 MiB   (usage=679 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6867 MiB   (usage=679 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6867 MiB   (usage=679 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6867 MiB   (usage=679 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6867 MiB   (usage=679 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6867 MiB   (usage=679 MiB)
+[路线B] 驱动预算=6530 本进程=692 => 反推其它=968 MiB ; margin=200 上限=6912 => 报出=6912 MiB
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6912 MiB   (usage=692 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6912 MiB   (usage=692 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6912 MiB   (usage=692 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6912 MiB   (usage=692 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6912 MiB   (usage=692 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6912 MiB   (usage=692 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6912 MiB   (usage=692 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6912 MiB   (usage=692 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6530 -> 6912 MiB   (usage=692 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6528 -> 6912 MiB   (usage=752 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6522 -> 6912 MiB   (usage=912 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6521 -> 6912 MiB   (usage=1764 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6521 -> 6912 MiB   (usage=2105 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6522 -> 6912 MiB   (usage=2265 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6522 -> 6912 MiB   (usage=2265 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6522 -> 6912 MiB   (usage=2265 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6522 -> 6912 MiB   (usage=2265 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6522 -> 6912 MiB   (usage=2265 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6522 -> 6912 MiB   (usage=2265 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6522 -> 6912 MiB   (usage=2265 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6506 -> 6912 MiB   (usage=2265 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6506 -> 6912 MiB   (usage=2265 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6506 -> 6912 MiB   (usage=2265 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6506 -> 6912 MiB   (usage=2265 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6506 -> 6912 MiB   (usage=2265 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6506 -> 6912 MiB   (usage=2265 MiB)
+QueryVideoMemoryInfo(LOCAL): Budget 6506 -> 6912 MiB   (usage=2265 MiB)
+[路线B] 驱动预算=6506 + 本进程=2265 MiB 已 ≥ 总量 → 公式不适用，本段放弃介入
+[观测] 驱动预算=6506 本进程用量=2427 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6490 本进程用量=2419 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6490 本进程用量=2419 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6490 本进程用量=2628 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6490 本进程用量=2628 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6490 本进程用量=2629 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+[观测] 驱动预算=6567 本进程用量=2505 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6553 本进程用量=2505 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+[观测] 驱动预算=6535 本进程用量=2673 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+===== wb-vram-shim v2 (Wine 部件版 dxgi.dll) pid=3300 =====
+本模块: C:\windows\system32\dxgi.dll
+宿主进程: C:\Program Files\Rockstar Games\Social Club\SocialClubHelper.exe
+===== 启动 =====
+模式: 改写
+[已加载 DXVK 原件] system32\wbvram_dxvk_dxgi.dll C:\windows\system32\wbvram_dxvk_dxgi.dll
+白名单命中 appid 3240220 
+[结果] total=8192 MiB（路线B：不用固定余量，预算在首次查询时按驱动预算现算）
+某个 GetDescN 探测不通过，该槽位不挂钩
+探测通过：DedicatedVideoMemory=8160 MiB, Budget=3672 MiB, Usage=0 MiB => 驱动口径其它软件=4487 MiB
+已挂钩适配器虚表: GetDesc=6ffffc9a7e80 QueryVideoMemoryInfo=6ffffc9a7500 GetDesc3=跳过
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+[观测] 驱动预算=6533 本进程用量=3213 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6288 本进程用量=4805 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6222 本进程用量=4841 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6190 本进程用量=4858 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6168 本进程用量=4780 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6138 本进程用量=4841 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6124 本进程用量=4949 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6118 本进程用量=5011 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6109 本进程用量=4884 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6085 本进程用量=4868 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6085 本进程用量=4863 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6085 本进程用量=4867 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6083 本进程用量=4864 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6081 本进程用量=4862 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6081 本进程用量=4907 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6079 本进程用量=4931 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6079 本进程用量=4907 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6077 本进程用量=4861 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6077 本进程用量=4857 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6077 本进程用量=4900 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6075 本进程用量=4922 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6071 本进程用量=4959 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6069 本进程用量=5027 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6069 本进程用量=5033 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6069 本进程用量=5033 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6069 本进程用量=5033 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6063 本进程用量=5032 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6063 本进程用量=5020 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6061 本进程用量=5007 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6061 本进程用量=4987 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6061 本进程用量=4996 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6059 本进程用量=4980 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6057 本进程用量=4970 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6057 本进程用量=4986 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6051 本进程用量=5010 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6049 本进程用量=4959 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6076 本进程用量=4944 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6072 本进程用量=4940 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6070 本进程用量=4933 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6066 本进程用量=4984 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6062 本进程用量=5043 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6062 本进程用量=5063 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6054 本进程用量=5079 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6054 本进程用量=5102 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6050 本进程用量=5096 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6050 本进程用量=5091 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6048 本进程用量=4985 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6044 本进程用量=4961 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6012 本进程用量=4998 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=6006 本进程用量=4895 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5986 本进程用量=4951 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5950 本进程用量=4954 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5938 本进程用量=4950 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5916 本进程用量=4981 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5912 本进程用量=4895 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5908 本进程用量=4983 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5904 本进程用量=4868 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5904 本进程用量=4960 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5902 本进程用量=4958 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5900 本进程用量=4958 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5898 本进程用量=4859 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5898 本进程用量=4861 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5896 本进程用量=4955 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5888 本进程用量=4962 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5888 本进程用量=4969 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5888 本进程用量=4918 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5888 本进程用量=4941 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5888 本进程用量=4883 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5888 本进程用量=4758 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5886 本进程用量=4876 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5886 本进程用量=4849 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5886 本进程用量=4861 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5886 本进程用量=4872 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5886 本进程用量=4865 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5886 本进程用量=4873 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5886 本进程用量=4884 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5886 本进程用量=4887 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5886 本进程用量=5004 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5886 本进程用量=4983 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5886 本进程用量=5012 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5886 本进程用量=5014 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5886 本进程用量=5027 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5886 本进程用量=5058 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5886 本进程用量=5021 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5886 本进程用量=4874 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5886 本进程用量=4864 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5886 本进程用量=4877 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5886 本进程用量=4880 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5884 本进程用量=4876 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5884 本进程用量=4882 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5884 本进程用量=4857 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5884 本进程用量=4860 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5884 本进程用量=4867 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5884 本进程用量=4811 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5884 本进程用量=4845 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5884 本进程用量=4858 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5884 本进程用量=4822 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5884 本进程用量=4879 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5884 本进程用量=4706 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5884 本进程用量=4713 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5882 本进程用量=4921 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5856 本进程用量=4947 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5834 本进程用量=4831 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5832 本进程用量=4936 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5831 本进程用量=4935 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5830 本进程用量=4834 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5828 本进程用量=4927 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5828 本进程用量=4943 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+[观测] 驱动预算=5828 本进程用量=4900 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+[观测] 驱动预算=5856 本进程用量=4776 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB
+GetDesc: DedicatedVideoMemory 8160 -> 8192 MiB
+[观测] 驱动预算=5825 本进程用量=4917 物理总量=8192 => total−预算−本进程=0 MiB（拿这个跟 nvtop 的其它进程占用对）; 实报=0 MiB

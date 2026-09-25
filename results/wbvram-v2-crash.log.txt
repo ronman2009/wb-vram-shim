@@ -1,0 +1,26 @@
+本模块路径: C:\windows\system32\DXGI.DLL
+===== wb-vram-shim（Wine 部件版 dxgi.dll）=====
+[已加载 DXVK 原件] system32\wbvram_dxvk_dxgi.dll <- C:\windows\system32\wbvram_dxvk_dxgi.dll
+白名单命中 appid= 3240220
+CreateDXGIFactory1 失败 hr=80004002
+===== wb-vram-shim v2 (Wine 部件版 dxgi.dll) pid=296 =====
+本模块: C:\windows\system32\DXGI.DLL
+宿主进程: S:\steamapps\common\Proton - Experimental\files\share\xalia\xalia.exe
+===== 启动 =====
+模式: 改写
+[已加载 DXVK 原件] system32\wbvram_dxvk_dxgi.dll C:\windows\system32\wbvram_dxvk_dxgi.dll
+拿不到 SteamAppId/SteamGameId，默认不改写（要强制生效设 WBVRAM_ALL=1）
+===== wb-vram-shim v2 (Wine 部件版 dxgi.dll) pid=296 =====
+本模块: C:\windows\system32\DXGI.DLL
+宿主进程: S:\steamapps\common\Proton - Experimental\files\share\xalia\xalia.exe
+===== 启动 =====
+模式: 改写
+[已加载 DXVK 原件] system32\wbvram_dxvk_dxgi.dll C:\windows\system32\wbvram_dxvk_dxgi.dll
+拿不到 SteamAppId/SteamGameId，默认不改写（要强制生效设 WBVRAM_ALL=1）
+===== wb-vram-shim v2 (Wine 部件版 dxgi.dll) pid=296 =====
+本模块: C:\windows\system32\DXGI.DLL
+宿主进程: S:\steamapps\common\Proton - Experimental\files\share\xalia\xalia.exe
+===== 启动 =====
+模式: 改写
+[已加载 DXVK 原件] system32\wbvram_dxvk_dxgi.dll C:\windows\system32\wbvram_dxvk_dxgi.dll
+拿不到 SteamAppId/SteamGameId，默认不改写（要强制生效设 WBVRAM_ALL=1）
