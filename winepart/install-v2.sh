@@ -33,8 +33,10 @@ hr() { printf '%s\n' "----------------------------------------------------------
 ver_of() {
     local f="$1"
     [ -f "$f" ] || { echo "文件不存在"; return; }
-    if strings -el "$f" 2>/dev/null | grep -q 'wbshim-v31'; then
-        echo "v3.1（NVML 逐进程枚举，剔除自己）"
+    if strings -el "$f" 2>/dev/null | grep -q 'wbshim-v32'; then
+        echo "v3.2（默认全游戏生效）"
+    elif strings -el "$f" 2>/dev/null | grep -q 'wbshim-v31'; then
+        echo "v3.1（逐进程枚举，带白名单）"
     elif strings -el "$f" 2>/dev/null | grep -q 'wbshim-v3-wholecard'; then
         echo "v3.0（整卡减法，已废弃）"
     elif strings -a "$f" 2>/dev/null | grep -q 'GraphicsRunningProcesses_v2'; then

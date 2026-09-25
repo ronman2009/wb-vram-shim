@@ -22,7 +22,7 @@ echo "==> 编译测试台"
       -D'__declspec(x)=' -D'__stdcall=' \
       "$HERE/harness.c" -o "$OUT"
 
-SCENES="patch nowhitelist dryrun badriid reserve dynamic default noself noprocs nvml-missing toolpath nested all-ours"
+SCENES="patch nowhitelist noappid dryrun badriid reserve dynamic default noself noprocs nvml-missing toolpath nested all-ours"
 
 pass=0; fail=0
 for s in $SCENES; do

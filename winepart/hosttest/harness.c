@@ -576,14 +576,27 @@ int main(int argc, char **argv)
               "日志里有 5861->6656 那行");
     }
     else if (str_eq(sc, "nowhitelist")) {
+        /* v3.2 默认全放行；设了 WBVRAM_APPS 后，名单外的游戏仍只做转发 */
         env_set("SteamGameId", "999999");
+        env_set("WBVRAM_APPS", "3240220");
         hr = CreateDXGIFactory1(g_iid_factory1, &factory);
-        CHECK(hr == 0, "工厂照常创建（转发不受白名单影响）");
+        CHECK(hr == 0, "工厂照常创建（转发不受限定影响）");
         CHECK(g_adapter_vtable[VTSLOT_GetDesc] == (void *)fake_GetDesc,
               "槽位未被改动");
         CHECK(desc_video_mem() == (8160ull << 20), "GetDesc 保持驱动原值 8160");
         CHECK(qvmi_budget() == (5861ull << 20), "预算保持驱动原值 5861");
-        CHECK(log_has("不在白名单"), "日志说明被白名单挡下");
+        CHECK(log_has("不在 WBVRAM_APPS"), "日志说明被 WBVRAM_APPS 挡下");
+    }
+    else if (str_eq(sc, "noappid")) {
+        /* 辅助进程（xalia 等）拿不到 SteamGameId → 保守线：不改写。
+         * v3.2 全放行模式下这是唯一还被挡的情形。 */
+        hr = CreateDXGIFactory1(g_iid_factory1, &factory);
+        CHECK(hr == 0, "工厂照常创建（纯转发）");
+        CHECK(g_adapter_vtable[VTSLOT_GetDesc] == (void *)fake_GetDesc,
+              "槽位未被改动");
+        CHECK(desc_video_mem() == (8160ull << 20), "GetDesc 保持驱动原值");
+        CHECK(qvmi_budget() == (5861ull << 20), "预算保持驱动原值");
+        CHECK(log_has("拿不到 SteamAppId/SteamGameId"), "辅助进程被保守跳过");
     }
     else if (str_eq(sc, "dryrun")) {
         env_set("SteamGameId", "3240220");

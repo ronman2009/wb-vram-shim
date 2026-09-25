@@ -76,9 +76,9 @@
  *
  * 安全阀
  * ------
- * - **白名单**：本文件会装进 Proton，对"用这个 Proton 的所有游戏"都可见。
- *   因此默认只对 appid 3240220（GTA V Enhanced）生效，其余游戏
- *   **一字节都不改**，只做纯转发。要放开设 WBVRAM_ALL=1。
+ * - **作用范围**：v3.2 起默认对**所有游戏**生效（泛化已实测：GTA V Enhanced 与
+ *   Forza Horizon 5 均正常）。要限定游戏，设 WBVRAM_APPS=<appid 列表>；
+ *   拿不到 appid 的辅助进程（xalia 等）仍然不碰。
  * - **虚表健全性校验**：挂钩前按原槽位真调一次，数值不合理（DXVK 改了虚表布局 /
  *   拿错对象）就放弃该槽位并记日志，绝不在没验证过的情况下动指针。
  * - WBVRAM_ENABLE=0 整体关闭（仍然正常转发）；WBVRAM_DRYRUN=1 只看不改。
@@ -116,8 +116,8 @@
  * --------------------------------
  *   WBVRAM_ENABLE       0 = 完全放行（默认 1）
  *   WBVRAM_DRYRUN       1 = 只观测不改写（默认关）
- *   WBVRAM_ALL          1 = 取消 appid 白名单（默认关）
- *   WBVRAM_APPS         白名单，逗号分隔 appid，默认 "3240220"
+ *   WBVRAM_APPS         逗号分隔 appid = **只**对这些游戏生效（默认空 = 全部）
+ *   WBVRAM_APPS         逗号分隔 appid；**默认空 = 全部游戏**，设置后只对这些生效
  *   WBVRAM_DYNAMIC      0 = 关掉 NVML 动态计算、退回静态 reserve（**默认开**）
  *   WBVRAM_MARGIN_MB    安全垫 MiB，默认 200
  *   WBVRAM_RESERVE_MB   静态模式余量 MiB，默认 1536（仅 WBVRAM_DYNAMIC=0 时用）
@@ -200,7 +200,7 @@ __declspec(dllimport) i32  WINAPI_ RegCloseKey(HKEY key);
 /* 版本标记。故意做得独特 —— 编译器的字符串池化会合并相同后缀，把中文串拆散，
  * 导致在 PE 二进制里搜不到完整的连续序列（实测中文串就是被这么拆散的）。
  * install.sh 的 ver_tag 用这一个 ASCII 串来认版本，不依赖任何中文。 */
-static const char WB_TAG[] = "<<wbshim-v31-procenum>>";
+static const char WB_TAG[] = "<<wbshim-v32-open>>";
 #define OPEN_EXISTING_      3u
 #define OPEN_ALWAYS_        4u
 #define FILE_ATTRIBUTE_NORMAL_ 0x80u
@@ -575,8 +575,7 @@ static u64 read_qw_memsize(void)
 
 static void apps_default(void)
 {
-    g_apps[0] = 0;
-    w_cat(g_apps, (const WCHAR *)L"3240220");
+    g_apps[0] = 0;      /* 默认空 = 全部游戏生效（v3.2）；WBVRAM_APPS 可限定 */
 }
 
 static u64 env_num(const WCHAR *name)
@@ -632,7 +631,8 @@ static void read_env(void)
     g_total_over = env_num((const WCHAR *)L"WBVRAM_TOTAL_MB") << 20;
 }
 
-/* 默认只对本机 GTA V Enhanced(3240220) 生效 */
+/* v3.2：默认对**所有游戏**生效（WBVRAM_APPS 可限定为列表）。
+ * 保守线保留：拿不到 appid 的辅助进程（xalia/webview2 之外的宿主杂项）不改写。 */
 static int appid_allowed(void)
 {
     WCHAR id[64];
@@ -645,16 +645,15 @@ static int appid_allowed(void)
         n = GetEnvironmentVariableW((const WCHAR *)L"SteamAppId", id, 60);
 
     if (!n || n >= 60) {
-        log_line((const WCHAR *)L"拿不到 SteamAppId/SteamGameId，默认不改写"
-                               L"（要强制生效设 WBVRAM_ALL=1）");
+        log_line((const WCHAR *)L"拿不到 SteamAppId/SteamGameId（辅助进程？），本进程不改写");
         return 0;
     }
 
-    if (!w_has_token(g_apps, id)) {
+    if (g_apps[0] && !w_has_token(g_apps, id)) {
         WCHAR *o = g_buf;
         o = w_cat(o, (const WCHAR *)L"appid ");
         o = w_cat(o, id);
-        o = w_cat(o, (const WCHAR *)L" 不在白名单 [");
+        o = w_cat(o, (const WCHAR *)L" 不在 WBVRAM_APPS [");
         o = w_cat(o, g_apps);
         o = w_cat(o, (const WCHAR *)L"]，本进程只做转发");
         *o = 0;
@@ -662,7 +661,14 @@ static int appid_allowed(void)
         return 0;
     }
 
-    log_path((const WCHAR *)L"白名单命中 appid", id, (const WCHAR *)L"");
+    {
+        WCHAR *o = g_buf;
+        o = w_cat(o, (const WCHAR *)L"appid ");
+        o = w_cat(o, id);
+        o = w_cat(o, (const WCHAR *)L" 生效（默认全放行）");
+        *o = 0;
+        log_line(g_buf);
+    }
     return 1;
 }
 

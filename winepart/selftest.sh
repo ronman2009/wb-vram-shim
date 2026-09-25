@@ -220,8 +220,8 @@ else
     sed 's/^/      /' "$ROOT/s14-v2.log" | tail -5
 fi
 line2="$(vline)"
-if echo "$line2" | grep -q 'v3\.1'; then
-    ok "v2 被认成「v3.1（逐进程枚举，剔除自己）」"
+if echo "$line2" | grep -q 'v3\.2'; then
+    ok "v2 被认成「v3.2（默认全游戏生效）」"
 else
     bad "v2 版本识别错: $line2"
 fi
@@ -239,7 +239,7 @@ if [ -x "$V2SH" ]; then
     else
         bad "dry-run 退出码非 0"
     fi
-    chk "识别出待装组件是 v3.1" "grep -q 'v3.1' '$ROOT/s15-v2dry.log'"
+    chk "识别出待装组件是 v3.2" "grep -q 'v3.2' '$ROOT/s15-v2dry.log'"
     chk "打印了将要执行的命令"     "grep -q '将要执行' '$ROOT/s15-v2dry.log'"
     chk "dry-run 确实没改文件" \
         "[ \"\$(sha256sum '$DXGI/dxgi.dll' | cut -d' ' -f1)\" = \"$NEW_SHA\" ]"

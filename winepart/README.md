@@ -142,7 +142,7 @@ Proton（本机实测：指向 `Proton - Experimental`），不需要手工指�
 
 | 安全阀 | 作用 |
 |---|---|
-| **appid 白名单** | 这份 DLL 对"用这个 Proton 的所有游戏"可见。默认只对 `3240220` 生效，其它游戏**纯转发、一字节不改**。`WBVRAM_ALL=1` 放开。 |
+| **作用范围（v3.2）** | 默认对**所有游戏**生效——泛化已在 GTA V Enhanced（+1.2 GiB）与 Forza Horizon 5（峰值 6.65→7.51 GiB）实测。要限定，设 `WBVRAM_APPS`；拿不到 appid 的辅助进程（xalia 等）始终不碰。 |
 | **虚表健全性校验** | 挂钩前对 4 个 GetDesc 槽位各做一次真实调用（用 1024 字节放大缓冲，避免写坏调用者的结构），要求 `DedicatedVideoMemory` 落在 64 MiB~1 TiB 且各槽位一致；`QueryVideoMemoryInfo` 要求 `Budget ≥ CurrentUsage` 且 ≤ 1 TiB。任一不满足就**放弃该槽位并记日志**。 |
 | **只抬不降** | 只在驱动给的预算更低时才改写。 |
 | **`WBVRAM_ENABLE=0`** | 整体关闭（仍正常转发）。 |
@@ -252,8 +252,8 @@ NVML 垫片加载失败（nvml.dll），GetLastError=…
 |---|---|---|
 | `WBVRAM_ENABLE` | `1` | `0` = 只转发不改写 |
 | `WBVRAM_DRYRUN` | 关 | `1` = 只观测不改写 |
-| `WBVRAM_ALL` | 关 | `1` = 取消 appid 白名单 |
-| `WBVRAM_APPS` | `3240220` | 白名单，逗号分隔 |
+| `WBVRAM_APPS` | 空 | 逗号分隔 appid = 只对这些游戏生效（默认空 = **全部游戏**） |
+
 | **`WBVRAM_DYNAMIC`** | **开** | `0` = 关掉 NVML 动态计算、退回静态余量 |
 | `WBVRAM_MARGIN_MB` | `200` | 安全垫 |
 | `WBVRAM_RESERVE_MB` | `1536` | 静态模式余量（仅 `WBVRAM_DYNAMIC=0` 时用） |
@@ -309,12 +309,13 @@ QueryVideoMemoryInfo(LOCAL): Budget … -> Y MiB   (usage=… MiB)
 
 ## 7. 验证状态
 
-**宿主端（Linux，不需要 GPU）** —— `./winepart/hosttest/run.sh`，**13 个场景全通过**：
+**宿主端（Linux，不需要 GPU）** —— `./winepart/hosttest/run.sh`，**14 个场景全通过**：
 
 | 场景 | 断言要点 |
 |---|---|
 | `patch` | 工厂建成、两个槽位被挂钩、GetDesc 8160→8192、静态预算 6656 |
-| `nowhitelist` | appid 不在白名单：槽位不动、数值不动、但转发照常 |
+| `nowhitelist` | `WBVRAM_APPS` 限定后名单外游戏：槽位不动、数值不动、但转发照常 |
+| `noappid` | 拿不到 SteamGameId 的辅助进程（xalia 等）：保守跳过，不改写 |
 | `dryrun` | 挂钩但只读、数值不变、观测行打印 |
 | `badriid` | **故意用错的 IID**（复刻 v1 的 bug）：错误码原样透传、不瞎挂；换正确 IID 后立刻生效 |
 | `reserve` | `WBVRAM_RESERVE_MB=1000` → 7192 |

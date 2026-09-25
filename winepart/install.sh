@@ -112,8 +112,10 @@ def hasw(s):
     return s.encode("utf-16-le") in d
 def hasa(s):
     return s.encode("ascii") in d
-if hasw("wbshim-v31"):
-    print("v3.1（NVML 逐进程枚举，剔除自己）")
+if hasw("wbshim-v32"):
+    print("v3.2（默认全游戏生效）")
+elif hasw("wbshim-v31"):
+    print("v3.1（逐进程枚举，带白名单）")
 elif hasw("wbshim-v3-wholecard"):
     print("v3.0（整卡减法，已废弃）")
 elif hasa("GraphicsRunningProcesses_v2"):
@@ -126,8 +128,10 @@ PY
         return
     fi
     if command -v strings >/dev/null 2>&1; then
-        if strings -el "$f" 2>/dev/null | grep -q 'wbshim-v31'; then
-            echo "v3.1（NVML 逐进程枚举，剔除自己）"
+        if strings -el "$f" 2>/dev/null | grep -q 'wbshim-v32'; then
+            echo "v3.2（默认全游戏生效）"
+        elif strings -el "$f" 2>/dev/null | grep -q 'wbshim-v31'; then
+            echo "v3.1（逐进程枚举，带白名单）"
         elif strings -el "$f" 2>/dev/null | grep -q 'wbshim-v3-wholecard'; then
             echo "v3.0（整卡减法，已废弃）"
 
@@ -426,7 +430,7 @@ cat <<TIPS
   改安全垫：              WBVRAM_MARGIN_MB=200 %command%   （默认 200）
   退回固定余量：          WBVRAM_DYNAMIC=0 %command%        （用 WBVRAM_RESERVE_MB，默认 1536）
   只想看数据不改写：      WBVRAM_DRYRUN=1 %command%
-  对所有游戏生效：        WBVRAM_ALL=1 %command%            （默认只认 3240220）
+  只对指定游戏生效：      WBVRAM_APPS=3240220,1551360 %command%   （默认全部游戏）
   临时完全关闭：          WBVRAM_ENABLE=0 %command%
 
 ⚠️ 注意

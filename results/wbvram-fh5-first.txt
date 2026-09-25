@@ -1,0 +1,45 @@
+===== wb-vram-shim v3 (Wine 部件版 dxgi.dll) pid=304 =====
+本模块: C:\windows\system32\DXGI.DLL
+宿主进程: S:\compatibilitytools.d\GE-Proton11-7-x86_64\files\share\xalia\xalia.exe
+===== 启动 =====
+<<wbshim-v31-procenum>>
+模式: 改写
+[候选未命中] system32\wbvram_dxvk_dxgi.dll C:\windows\system32\wbvram_dxvk_dxgi.dll
+[已加载 DXVK 原件] STEAM_COMPAT_TOOL_PATHS Z:\home\ronman\.local\share\Steam\compatibilitytools.d\GE-Proton11-7-x86_64\files\lib\wine\dxvk\x86_64-windows\wbvram_dxvk_dxgi.dll
+拿不到 SteamAppId/SteamGameId，默认不改写（要强制生效设 WBVRAM_ALL=1）
+===== wb-vram-shim v3 (Wine 部件版 dxgi.dll) pid=440 =====
+本模块: C:\windows\system32\DXGI.DLL
+宿主进程: S:\compatibilitytools.d\GE-Proton11-7-x86_64\files\share\xalia\xalia.exe
+===== 启动 =====
+<<wbshim-v31-procenum>>
+模式: 改写
+[候选未命中] system32\wbvram_dxvk_dxgi.dll C:\windows\system32\wbvram_dxvk_dxgi.dll
+[已加载 DXVK 原件] STEAM_COMPAT_TOOL_PATHS Z:\home\ronman\.local\share\Steam\compatibilitytools.d\GE-Proton11-7-x86_64\files\lib\wine\dxvk\x86_64-windows\wbvram_dxvk_dxgi.dll
+拿不到 SteamAppId/SteamGameId，默认不改写（要强制生效设 WBVRAM_ALL=1）
+===== wb-vram-shim v3 (Wine 部件版 dxgi.dll) pid=296 =====
+本模块: C:\windows\system32\DXGI.DLL
+宿主进程: S:\compatibilitytools.d\GE-Proton11-7-x86_64\files\share\xalia\xalia.exe
+===== 启动 =====
+<<wbshim-v31-procenum>>
+模式: 改写
+[候选未命中] system32\wbvram_dxvk_dxgi.dll C:\windows\system32\wbvram_dxvk_dxgi.dll
+[已加载 DXVK 原件] STEAM_COMPAT_TOOL_PATHS Z:\home\ronman\.local\share\Steam\compatibilitytools.d\GE-Proton11-7-x86_64\files\lib\wine\dxvk\x86_64-windows\wbvram_dxvk_dxgi.dll
+appid 1551360 不在白名单 [3240220]，本进程只做转发
+===== wb-vram-shim v3 (Wine 部件版 dxgi.dll) pid=332 =====
+本模块: C:\windows\system32\dxgi.dll
+宿主进程: S:\steamapps\common\ForzaHorizon5\ForzaHorizon5.exe
+===== 启动 =====
+<<wbshim-v31-procenum>>
+模式: 改写
+[候选未命中] system32\wbvram_dxvk_dxgi.dll C:\windows\system32\wbvram_dxvk_dxgi.dll
+[已加载 DXVK 原件] STEAM_COMPAT_TOOL_PATHS Z:\home\ronman\.local\share\Steam\compatibilitytools.d\GE-Proton11-7-x86_64\files\lib\wine\dxvk\x86_64-windows\wbvram_dxvk_dxgi.dll
+appid 1551360 不在白名单 [3240220]，本进程只做转发
+===== wb-vram-shim v3 (Wine 部件版 dxgi.dll) pid=1060 =====
+本模块: C:\windows\system32\dxgi.dll
+宿主进程: S:\steamapps\common\ForzaHorizon5\webview2\msedgewebview2.exe
+===== 启动 =====
+<<wbshim-v31-procenum>>
+模式: 改写
+[候选未命中] system32\wbvram_dxvk_dxgi.dll C:\windows\system32\wbvram_dxvk_dxgi.dll
+[已加载 DXVK 原件] STEAM_COMPAT_TOOL_PATHS Z:\home\ronman\.local\share\Steam\compatibilitytools.d\GE-Proton11-7-x86_64\files\lib\wine\dxvk\x86_64-windows\wbvram_dxvk_dxgi.dll
+appid 1551360 不在白名单 [3240220]，本进程只做转发
